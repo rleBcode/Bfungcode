@@ -40,54 +40,61 @@ body {
   font-weight: bold;
 }
 
-.content {
+.body-wrapper {
+  height: 100vh;
+}
+.body-wrapper .content {
   overflow: auto;
-  width: 100%;
+  width: 50%;
   border-style: solid;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
 }
-.content .container {
+.body-wrapper .content .container {
+  position: relative;
   border-style: solid;
   border: 15px black;
   display: flex;
   flex-direction: row-reverse;
+  align-content: space-around;
 }
-.content .container .blog {
+.body-wrapper .content .container .blog {
   width: 50%;
   border-style: solid;
   display: flex;
   flex-direction: column;
   right: 50%;
 }
-.content .container .blog .atas {
+.body-wrapper .content .container .blog .atas {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
-.content .container .blog .atas #tanggal {
+.body-wrapper .content .container .blog .atas #tanggal {
   display: flex;
   border-style: solid;
   align-items: flex-start;
   left: 30%;
 }
-.content .container .blog .atas #judul {
+.body-wrapper .content .container .blog .atas #judul {
   display: flex;
   border-style: solid;
   align-items: flex-end;
   right: 70%;
 }
-.content .container .blog .paragrap {
+.body-wrapper .content .container .blog .paragrap {
   border-style: solid;
 }
-.content .container .img-blog {
+.body-wrapper .content .container .img-blog {
   padding: 0%;
   margin: 0%;
   width: 50%;
   border-style: solid;
   display: flex;
 }
-.content .container .img-blog img {
+.body-wrapper .content .container .img-blog img {
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -40,55 +40,62 @@ body {
     }
 }
 
-.content {
-    overflow: auto;
-    width: 100%;
-    border-style: solid;
-    display: flex;
-    flex-direction: column-reverse;
-    .container {
+.body-wrapper {
+    height: 100vh;
+    .content {
+        overflow: auto;
+        width: 50%;
         border-style: solid;
-        border: 15px black;
         display: flex;
-        flex-direction: row-reverse;
-        .blog {
-            width: 50%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        .container {
+            position: relative;
             border-style: solid;
+            border: 15px black;
             display: flex;
-            flex-direction: column;
-            right: 50%;
-            .atas {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                #tanggal {
-                    display: flex;
-                    border-style: solid;
-                    align-items: flex-start;
-                    left: 30%;
-                }
-                #judul {
-                    display: flex;
-                    border-style: solid;
-                    align-items: flex-end;
-                    right: 70%;
-                }
-            }
-            .paragrap {
-                border-style: solid;
-            }
-        }
-        .img-blog {
-            padding: 0%;
-            margin: 0%;
-            width: 50%;
-            border-style: solid;
-            display: flex;
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+            flex-direction: row-reverse;
+            align-content: space-around;
+            .blog {
                 width: 50%;
+                border-style: solid;
+                display: flex;
+                flex-direction: column;
+                right: 50%;
+                .atas {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: space-between;
+                    #tanggal {
+                        display: flex;
+                        border-style: solid;
+                        align-items: flex-start;
+                        left: 30%;
+                    }
+                    #judul {
+                        display: flex;
+                        border-style: solid;
+                        align-items: flex-end;
+                        right: 70%;
+                    }
+                }
+                .paragrap {
+                    border-style: solid;
+                }
+            }
+            .img-blog {
+                padding: 0%;
+                margin: 0%;
+                width: 50%;
+                border-style: solid;
+                display: flex;
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
             }
         }
     }
